@@ -6,17 +6,12 @@ import random
 import time
 import csv
 
+'''
+코드 실행을 위해서는 바탕화면에 chromedriver.exe가 있어야 합니다. 
+chromedriver는 https://chromedriver.chromium.org/downloads에서 받으실 수 있습니다.
+'''
 
-delay=3
-browser = Chrome(r'C:\Users\gyeol\Desktop\chromedriver.exe')
-browser.implicitly_wait(delay)
-
-
-#browser.get('https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015')
-browser.get('https://www.melon.com/chart/index.htm')
-
-browser.find_element_by_class_name("chart_finder").click()
-
+# 전역변수 선언부
 titlelist = []
 artistlist = []
 datelist = []
@@ -25,18 +20,18 @@ houselist = []
 jaksalist = []
 jakgoklist = []
 lyricslist = []
+delay=3
 
 
-# print(artist)
-# print(date)
-# print(genre)
-# print(house)
-# print(jaksa)
-# print(jakgok)
-# print(lyrics)
-'''
-차트 부분입니다.
-'''
+
+
+browser = Chrome(r'C:\Users\gyeol\Desktop\chromedriver.exe')
+browser.implicitly_wait(delay)
+
+# 멜론 공식 사이트에서 차트 검색으로 이동
+browser.get('https://www.melon.com/chart/index.htm')
+browser.find_element_by_class_name("chart_finder").click()
+
 
 
 def chart_load(decade,year,month,week):
@@ -45,13 +40,7 @@ def chart_load(decade,year,month,week):
 
     browser.find_element_by_xpath(
         '/html/body/div/div[3]/div/div/form/div[1]/div/div/div[1]/div[1]/ul/li['
-        + str(decade) + ']').click()  # 2010년대
-
-    # browser.find_element_by_xpath('/html/body/div/div[3]/div/div/form/div[1]/div/div/div[1]/div[1]/ul/li[1]').click() #2020년대
-    # browser.find_element_by_xpath( '/html/body/div/div[3]/div/div/form/div[1]/div/div/div[1]/div[1]/ul/li[2]').click()  # 2010년대
-
-    # 2020년대 - 2020년
-    # browser.find_element_by_xpath('/html/body/div/div[3]/div/div/form/div[1]/div/div/div[2]/div[1]/ul/li').click()
+        + str(decade) + ']').click()
 
     # 2010년대 - 2019년 : 내림차순으로 리스트 목록 상승시키면 됨
     browser.find_element_by_xpath('/html/body/div/div[3]/div/div/form/div[1]/div/div/div[2]/div[1]/ul/li['
@@ -66,24 +55,22 @@ def chart_load(decade,year,month,week):
     browser.find_element_by_xpath('/html/body/div/div[3]/div/div/form/div[1]/div/div/div[4]/div[1]/ul/li['
                                   + str(week) + ']').click()
 
+    browser.find_element_by_xpath('/html/body/div/div[3]/div/div/form/div[1]/div/div/div[5]/div[1]/ul/li[2]').click()
 
+    '''
+    다른 장르 설정을 위한 프리셋
     if year > 3:
         browser.find_element_by_xpath(
             '/html/body/div/div[3]/div/div/form/div[1]/div/div/div[5]/div[1]/ul/li[2]').click()
     else :
-        # 아이돌이라는 장르가 없어 댄스로 고정
         browser.find_element_by_xpath('/html/body/div/div[3]/div/div/form/div[1]/div/div/div[5]/div[1]/ul/li[2]').click()
+    '''
 
     browser.find_element_by_class_name("btn_b26").click()
 
 
-
-
 def extract_feature(score):
     forpath = "/html/body/div/div[3]/div/div/div/div[1]/div[2]/form/div[1]/table/tbody/tr["
-
-    name_backpath = "]/td[4]/div/div/div[1]/span/strong/a"
-    teamname_backpath = "]/td[4]/div/div/div[2]/div[1]/a"
     feature_backpath = "]/td[4]/div/a"
     featurepath = forpath + str(score) + feature_backpath
 
