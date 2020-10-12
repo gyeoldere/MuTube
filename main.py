@@ -20,6 +20,7 @@ houselist = []
 jaksalist = []
 jakgoklist = []
 lyricslist = []
+toplist = []
 delay=3
 
 
@@ -96,6 +97,14 @@ def extract_feature(score):
     date = str(date).replace(".","")
     genre = browser.find_element_by_xpath(
         "/html/body/div[1]/div[3]/div/div/div/form/div/div/div[2]/div[2]/dl/dd[3]").text
+    ban = ["힙합","랩","발라드"]
+    for banlist in ban:
+        if banlist in genre:
+            browser.back()
+            browser.implicitly_wait(3)
+            time.sleep(random.randrange(1, 3))
+            print("banned" + banlist)
+            return
 
     composers = browser.find_elements_by_xpath("/html/body/div[1]/div[3]/div/div/div/div[3]/ul/li")
     for i in range (len(composers)):
@@ -134,6 +143,7 @@ def extract_feature(score):
     jaksalist.append(jaksa)
     jakgoklist.append(jakgok)
     lyricslist.append(lyrics)
+    toplist.append(score)
 
     print(title)
 
@@ -156,7 +166,7 @@ for i in range (2):
     if decade == 1:
         for month in range(1,8):
             for week in range(1,5):
-                for score in range(3):
+                for score in range(10):
                     chart_load(decade, 1, month, week)
                     try:
                         extract_feature(score+1)
@@ -166,14 +176,14 @@ for i in range (2):
         for j in range (4):
             for month in range(1, 13):
                 for week in range(1, 5):
-                    for score in range(3):
+                    for score in range(4):
                         chart_load(decade, year, month, week)
                         extract_feature(score+1)
 
             year -= 1
     decade -= 1
 
-sumlist = [titlelist,artistlist,datelist,genrelist,houselist,jaksalist,jakgoklist,lyricslist]
+sumlist = [titlelist,artistlist,datelist,genrelist,houselist,jaksalist,jakgoklist,lyricslist,toplist]
 
 with open('output.tsv', 'wt') as out_file:
 
