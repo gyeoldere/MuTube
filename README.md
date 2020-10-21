@@ -14,4 +14,7 @@
 
 ---
 # 주제
-![image](https://user-images.githubusercontent.com/45448731/96712806-a3647480-13da-11eb-896f-729c174fb2b2.png)
+- 플레이리스트 기반 새로운 플레이리스트 생성
+- 플레이리스트 제목 생성  
+
+![image](https://user-images.githubusercontent.com/45448731/96713427-88463480-13db-11eb-9f64-14eeeeabc5ab.png)
