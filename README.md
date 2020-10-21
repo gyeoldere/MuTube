@@ -3,7 +3,7 @@
 <br>
 
 ---
-# 팀원
+## 팀원
 이름|역할|비고
 :---:|:---:|:---:
 [이한결](https://github.com/gyeoldere)|팀 총괄|팀장
@@ -13,8 +13,13 @@
 <br>
 
 ---
-# 주제
+## 주제
 - 플레이리스트 기반 새로운 플레이리스트 생성
 - 플레이리스트 제목 생성  
 
 ![image](https://user-images.githubusercontent.com/45448731/96713427-88463480-13db-11eb-9f64-14eeeeabc5ab.png)
+<br>
+
+---
+## 프로젝트 일정
+![image](https://user-images.githubusercontent.com/45448731/96713913-5b465180-13dc-11eb-887d-e22776c31955.png)
