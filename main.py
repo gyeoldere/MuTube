@@ -22,7 +22,7 @@ jakgoklist = []
 lyricslist = []
 toplist = []
 delay=3
-
+ 
 
 
 
