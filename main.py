@@ -25,7 +25,6 @@ delay=3
  
 
 
-
 browser = Chrome(r'C:\Users\gyeol\Desktop\chromedriver.exe')
 browser.implicitly_wait(delay)
 
