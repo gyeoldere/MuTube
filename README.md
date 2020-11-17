@@ -3,7 +3,7 @@
 <br>
 
 ---
-## 팀원
+## 팀원 
 이름|역할|비고
 :---:|:---:|:---:
 [이한결](https://github.com/gyeoldere)|팀 총괄|팀장
@@ -31,5 +31,5 @@
 
 ---
 ## 
-- [`main.py`](https://github.com/gyeoldere/MuTube/blob/master/main.py) : data 크롤링 코드  
+- [`main.py`](https://github.com/gyeoldere/MuTube/blob/master/main.py) : data 크롤링 코드   
 - [`아이돌 노래_2016_2020.tsv`](https://github.com/gyeoldere/MuTube/blob/master/%EC%95%84%EC%9D%B4%EB%8F%8C%20%EB%85%B8%EB%9E%98_2016_2020.tsv) : 우리 팀 Dataset (2016년 ~ 2020년 아이돌 노래)
