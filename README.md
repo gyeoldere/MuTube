@@ -71,7 +71,7 @@
 ## 개발 기술 내용 및 진행과정
 - [중요한 속성 파악을 위한 데이터 분석 진행](#중요한-속성-파악을-위한-데이터-분석-진행)
 - [추천 시스템 모델 훈련 방법](#추천-시스템-모델-훈련-방법)
-- 
+- [제목 생성 시스템 모델 훈련 방법](#제목-생성-시스템-모델-훈련-방법)
 ### 중요한 속성 파악을 위한 데이터 분석 진행
 [`데이터 분석.ipynb`](https://github.com/gyeoldere/MuTube/blob/master/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D.ipynb)
 
@@ -136,7 +136,11 @@ min_count: 데이터에 등장하는 단어의 최소 빈도수 – word2vec/doc
 
 - Hierarchical Clustering을 통하여 정보 (n=10)을 가지고 bottom up(아래-->위) 방식의 Hierarchical Agglomerative clustering(병합 군집)을 수행
   - Agglomerative clustering: top down 방식인 hierarchical clustering 방식과 반대로(bottom up) 진행되지만 결과값은 비슷함
+<br>
 
+### 제목 생성 시스템 모델 훈련 방법
+![image](https://user-images.githubusercontent.com/45448731/100842236-e0348880-34bb-11eb-8d62-c23fbfb43f62.png)
+ - [여기](https://github.com/gyeoldere/MuTube/tree/master/kogpt2) 
 ---
 ## 프로젝트 일정
 <img src="https://user-images.githubusercontent.com/45448731/100837059-cf801480-34b3-11eb-8021-3e142db708e8.png" width="800px"/>  
