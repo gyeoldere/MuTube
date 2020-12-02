@@ -140,7 +140,7 @@ min_count: 데이터에 등장하는 단어의 최소 빈도수 – word2vec/doc
 
 ### 제목 생성 시스템 모델 훈련 방법
 ![image](https://user-images.githubusercontent.com/45448731/100842236-e0348880-34bb-11eb-8d62-c23fbfb43f62.png)
- - [여기](https://github.com/gyeoldere/MuTube/tree/master/kogpt2) 
+ - [**여기**](https://github.com/gyeoldere/MuTube/tree/master/kogpt2) 참조
 ---
 ## 프로젝트 일정
 <img src="https://user-images.githubusercontent.com/45448731/100837059-cf801480-34b3-11eb-8021-3e142db708e8.png" width="800px"/>  
