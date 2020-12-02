@@ -1,9 +1,10 @@
 ![image](https://user-images.githubusercontent.com/45448731/100836430-a14e0500-34b2-11eb-915f-1a19cbf82169.png)
 <br>
 
-#### 목차  
+## 목차  
 - [팀원](#팀원)  
 - [주제](#주제)  
+- [필요성](#필요성)  
 - [프로젝트 일정](#프로젝트-일정)   
 - 
 ---
@@ -23,6 +24,16 @@
 
 ![image](https://user-images.githubusercontent.com/45448731/96713427-88463480-13db-11eb-9f64-14eeeeabc5ab.png)
 <br>
+
+---
+## 필요성
+#### > 기존 협업 필터링 방식  
+![image](https://user-images.githubusercontent.com/45448731/100837868-c479b400-34b4-11eb-889b-80328ec81f26.png)
+- **User-based Recommendation**: 나와 유사한 성향을 지닌 사람을 기반으로 그 사람이 들은 노래를 추천해줌
+- **Item-based Recommendation**: 내가 이전에 들은 노래(혹은 좋아요 누른 노래)를 기반으로 그 노래와 유사한 다른 노래를 추천해주는 방식
+
+#### > 협업 필터링 방식의 문제점
+- 
 
 ---
 ## 프로젝트 일정
