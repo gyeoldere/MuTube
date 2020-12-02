@@ -71,12 +71,34 @@
 ## 개발 기술 내용 및 진행과정
 ### 중요한 속성 파악을 위한 데이터 분석 진행
 [`데이터 분석.ipynb`](https://github.com/gyeoldere/MuTube/blob/master/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D.ipynb)
+
 - 가수, 소속사, 성별, 작사, 작곡가의 경우 쏠림이 적게 나타남
+
 - 순위가 없는 비율이 전체의 75% 이상을 차지할 정도로 크므로 최고 순위를 고려하지 않을 예정
 <br>
 
 ### 추천 시스템 모델 훈련 방법
-![image](https://user-images.githubusercontent.com/45448731/100840620-829f3c80-34b9-11eb-8251-df6f5c94e3d0.png)
+![image](https://user-images.githubusercontent.com/45448731/100840620-829f3c80-34b9-11eb-8251-df6f5c94e3d0.png)  
+
+
+[`최종모델+기능시연.ipynb`](https://github.com/gyeoldere/MuTube/blob/master/%EC%B5%9C%EC%A2%85%EB%AA%A8%EB%8D%B8%2B%EA%B8%B0%EB%8A%A5%EC%8B%9C%EC%97%B0.ipynb): **데이터 분석 ~ 완료된 클러스터링 데이터 불러오기** 부분 참조
+
+#### 1. 데이터 정제
+- 일본어 가사, 중국어 가사 삭제
+  - 가사 데이터로 한국어 형태소 분석을 통해 클러스터링 예정이기 때문
+  
+- 음악이 아닌 데이터(ex. 콘서트 대본) 삭제
+- 가사가 N/A 값인 데이터 삭제 `-N/A: Not Applicable 또는 Not Available, 해당 없음/공란 의 의미`
+  - 클러스터링 단계에서는 가사만 사용됨
+  
+- 중복된 가사 제거
+- 이모티콘을 포함한 특수문자 모두 제거 
+  - 정규식 이용
+  
+- 아무것도 남지 않은 데이터 N/A로 변경
+- N/A 값 모두 제거
+
+
 
 ---
 ## 프로젝트 일정
