@@ -22,7 +22,7 @@
 
 ---
 ## 프로젝트 일정
-<img src="https://user-images.githubusercontent.com/45448731/96713913-5b465180-13dc-11eb-887d-e22776c31955.png" width="800px"/>
+<img src="https://user-images.githubusercontent.com/45448731/100837059-cf801480-34b3-11eb-8021-3e142db708e8.png" width="800px"/>
 
 #### 진행 상황
 - **계획 설정**: 9/17~10/10
