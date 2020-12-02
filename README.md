@@ -7,9 +7,9 @@
 이름|역할|비고 
 :---:|:---:|:---:
 [이한결](https://github.com/gyeoldere)|팀 총괄|팀장
-이승민|데이터 전처리, 형태소 분석|
-[정민지](https://github.com/minji-o-j)|플레이리스트 생성|
-[한우정](https://github.com/dnwjddl)|플레이리스트 제목 생성|
+이승민|플레이리스트 생성|
+[정민지](https://github.com/minji-o-j)|플레이리스트 제목 생성|
+[한우정](https://github.com/dnwjddl)|데이터 전처리 및 분석|
 <br>
 
 ---
