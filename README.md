@@ -129,10 +129,13 @@ min_count: 데이터에 등장하는 단어의 최소 빈도수 – word2vec/doc
 
 - 따라서, **Hierarchical Clustering**을 통해 클러스터링의 경향성을 확인한 뒤, 클러스터의 개수를 정했음
 
-  - Hierarchical Clustering : 덴드로그램(Dendrogram, 계층적 트리 모형) 을 이용하여 개별 개체들을 순차적, 계층적으로 유사한 개체와 통합하여 군집화를 수행하는 알고리즘
+  - Hierarchical Clustering : 덴드로그램(Dendrogram, 계층적 트리 모형) 을 이용하여 개별 개체들을 순차적, 계층적으로 유사한 개체와 통합하여 군집화를 수행하는 알고리즘, 클러스터의 수를 지정하지 않아도 알아서 클러스터링 수행
   
   - 덴드로그램을 적절한 수준에서 자르면 전체 데이터를 몇 개의 군집으로 나눌 수 있게 됨
 ![image](https://user-images.githubusercontent.com/45448731/100841742-0c033e80-34bb-11eb-8ef7-dbf2f8af3c44.png)
+
+- Hierarchical Clustering을 통하여 정보 (n=10)을 가지고 bottom up(아래-->위) 방식의 Hierarchical Agglomerative clustering(병합 군집)을 수행
+  - Agglomerative clustering: top down 방식인 hierarchical clustering 방식과 반대로(bottom up) 진행되지만 결과값은 비슷함
 
 ---
 ## 프로젝트 일정
