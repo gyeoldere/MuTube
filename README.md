@@ -69,6 +69,9 @@
 
 ---
 ## 개발 기술 내용 및 진행과정
+- [중요한 속성 파악을 위한 데이터 분석 진행](#중요한-속성-파악을-위한-데이터-분석-진행)
+- [추천 시스템 모델 훈련 방법](#추천-시스템-모델-훈련-방법)
+- 
 ### 중요한 속성 파악을 위한 데이터 분석 진행
 [`데이터 분석.ipynb`](https://github.com/gyeoldere/MuTube/blob/master/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B6%84%EC%84%9D.ipynb)
 
@@ -121,9 +124,13 @@ min_count: 데이터에 등장하는 단어의 최소 빈도수 – word2vec/doc
 
 #### 4. 클러스터링
 > 비지도 학습으로, 데이터를 몇 개의 단위로 분류하는 작업
+
 - 몇몇 클러스터링은 hyperparameter로 몇 개의 클러스터로 배분할 것인지 결정해 주어야 함
+
 - 따라서, **Hierarchical Clustering**을 통해 클러스터링의 경향성을 확인한 뒤, 클러스터의 개수를 정했음
+
   - Hierarchical Clustering : 덴드로그램(Dendrogram, 계층적 트리 모형) 을 이용하여 개별 개체들을 순차적, 계층적으로 유사한 개체와 통합하여 군집화를 수행하는 알고리즘
+  
   - 덴드로그램을 적절한 수준에서 자르면 전체 데이터를 몇 개의 군집으로 나눌 수 있게 됨
 ![image](https://user-images.githubusercontent.com/45448731/100841742-0c033e80-34bb-11eb-8ef7-dbf2f8af3c44.png)
 
